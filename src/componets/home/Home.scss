@@ -1,0 +1,132 @@
+.Home{
+   width: 620px;
+   border-radius: 10px;
+   position: relative;
+
+  
+
+  
+   .background{
+      position: fixed;
+         // left: 50%;
+         // // right: 50%;
+         z-index: 1;
+         display: block;
+         background-image: url(../../../public/assets/oswaldo-martinez-W0ZYnYIhhDc-unsplash.jpg);
+         background-size: cover;
+         width:620px;
+         height: 450px;
+         filter: blur(5px);
+         border-radius: 10px;
+      
+   }
+
+   .container{
+      position: fixed;
+      z-index: 9999; 
+      width: 100%;
+      color: white;
+      overflow: auto;
+      position: relative;
+      padding: 50px;
+      padding-right: 80px;
+     
+      .search {
+         gap: 10px;   
+         margin-bottom: 20px;       
+            input {
+               color: white;
+               border: none;
+               width: 50%;
+               padding-inline: 10px;
+               padding-block: 10px;
+               gap: 10px;          
+               background: transparent;
+               border-bottom: 2px solid #0039a6;      
+               outline: none;             
+               caret-color: white;              
+               font-size: 1.3rem;
+
+               &::placeholder{
+                  color: white;
+                  font-size: 1rem;
+               }
+              
+            }
+            
+      
+            button {
+               border: none;
+               width: 100px;
+               padding-inline: 10px;
+               padding-block: 10px;
+               border-radius: 5px;
+               border: 2px solid #0039a6;
+               background: transparent;
+               cursor: pointer;
+               color: white;
+               transition: all ease-in-out 0.3s;
+               font-size: 1rem;
+               &:hover{
+                  scale: (1.1);
+               }
+               &:active{
+                  scale: (1);
+               }
+               
+            }
+         }
+
+
+      .top{
+
+         .left-part{
+            flex-direction: column;
+            flex: 1;
+          
+            .city{
+               flex-direction: column;
+               gap: 10px;
+
+               .city-name{
+                  color: #0039a6;
+               }
+
+               .desc{
+                  font-size: 1.5rem;
+                  color:#f0cf61 ;
+               }
+               .color{
+                  color: #100d0d;
+               }
+               
+            
+               .image{
+                  width: 150px;
+                  
+                  img{
+                     width: 100%;
+                  }
+               }
+            }
+         }
+      }
+
+      .right-part{
+         h1{
+            font-size: 5rem;
+            sup{
+               font-size: 2rem;
+            }
+         }
+         p{
+            font-size: 3rem;
+            span{
+               color: #0039a6;
+            }
+         }
+      }
+
+     
+   }
+}
