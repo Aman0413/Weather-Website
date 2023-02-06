@@ -15,7 +15,7 @@ function Home() {
   const [city, setCity] = useState("");
 
   async function fetchData(searchKey) {
-    const url = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${searchKey}`;
+    const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${searchKey}`;
 
     try {
       const data = await axios.get(url);
