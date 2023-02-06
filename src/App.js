@@ -5,6 +5,12 @@ function App() {
   return (
     <div className="App">
       <Home />
+      <div>
+        <p className="copyright">
+          Copyright © {new Date().getFullYear()} All rights reserved |Made by
+          Aman
+        </p>
+      </div>
     </div>
   );
 }
