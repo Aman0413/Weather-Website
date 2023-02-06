@@ -79,7 +79,7 @@ function Home() {
             </h1>
             <p>
               Feels/
-              <span>
+              <span className="bold">
                 {feels} <sup>o</sup>
               </span>
             </p>
